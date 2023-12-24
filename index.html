@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>heavenbites</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+</head>
+<!-- <a>"Baked goods that take you to paradise"</a> -->
+<body>
+    <div class="header">
+        <h2>Welcome Heavenly Bites</h2>
+        
+    </div>
+
+      <nav class="navbar navbar-expand-lg bg-white text-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <img src="assets/heavenly-bites-high-resolution-color-logo__4_-removebg-preview.png" alt=""  height="" width="400px"> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Special Occasions</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Birthday Cake</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Wedding Cake</a></li>
+              </ul>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#" c4>Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="profile()" id="c5">Profile 
+                <span><i class="fa-solid fa-user" style="color: #a52a2a;"></i></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+    <div id="bg">
+      <div class="form-container" id="applicate">
+        <form class="form" id="in">
+        <p class="title">Login</p> 
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="">
+            </div> 
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="">
+                <div class="forgot">
+                  <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
+                </div>
+            </div>
+            <button class="sign" onclick="signin()">Sign in</button><br>  
+        
+        <p class="signup">Don't have an account?
+            <a rel="noopener noreferrer" href="#" class="" onclick="signup()">Sign up</a>
+        </p>
+      </form>
+        
+        <form id="up">
+            <p class="title">Sign up</p>
+            <div class="input-group">
+                <label for="fullname">Fullname</label>
+                <input type="text" name="fullname" id="fullname" placeholder="">
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="">
+            </div>
+            <div class="input-group">
+                <label for="contact">Contact</label>
+                <input type="number" name="contact" id="contact" placeholder="">
+            </div>
+            <div class="input-group">
+                <label for="username">Username <span><ion-icon name="people-outline"></ion-icon></span></label>
+                <input type="text" name="username" id="username" placeholder="">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="">
+            </div><br>
+            <button class="sign">Sign up</button>
+          </form>
+        
+      </div>
+    </div>
+  
+    <!-- font-family: 'Great Vibes', cursive; -->
+
+    <div class="containers" id="pho">
+      <img src="assets/1.png"width="100%" height="500px">
+    </div>
+
+    <div class="container">
+      <p class="head">welcome to heavenly bites</p>
+      <p class="welcome">Welcome to Heavenly Bites Bakery, where we turn your dessert dreams into reality. 
+        Step into a world of unparalleled flavors and enchanting aromas as our heavenly creations beckon you. 
+        Prepare to be captivated by our exquisite treats, crafted with passion and precision. 
+        Your taste buds are in for an unforgettable journey of pure indulgence. 
+        Thank you for choosing us to be a part of your sweetest moments. Enjoy the heavenly experience!
+      </p>
+    </div>
+
+    <div class="call">
+      <div class="content">
+        <div class="best">
+          <h1>The Best Bakery In <br>Your City</h1>
+        </div>
+        <div class="num">
+          <div class="icon">
+            <svg id="push" xmlns="http://www.w3.org/2000/svg" height="70px" fill="black" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+          </div>
+          <div class="call_bake"><a href= "tel:+91 9626405285" style="text-decoration: none; color: #fff">
+            <p>Call Us<br>+91 9626405285</p></a>
+          </div>
+        </div>
+      </div>
+      <div class="expoler">
+        <p style="color:black"><b>// BAKERY PRODUCTS</b></p>
+        <h5>Explore The Categories Of <br>Our Bakery Products</h5>
+      </div>
+      <div class="img-group">
+        <div class="item">
+          <img class="image" src="assets/cake.jpg" width="350px" height="300px">
+          <div class="con">
+            <p><b>cake</b></p>
+            <p class="rate">$2 - $5</p>
+            <p style="font-size:18px;">Delicious Food Makes Tremendous <br>Feel</p>
+          </div>
+        </div>
+        <div class="item">
+          <img class="image" src="assets/cookies.jpg" width="350px" height="300px">
+          <div class="con">
+            <p><b>cookies</b></p>
+            <p class="rate">$2 - $5</p>
+            <p style="font-size:18px;">Delicious Food Makes Tremendous <br>Feel</p>
+          </div>
+        </div>
+        <div class="item">
+          <img class="image" src="assets/bread.jpg" width="350px" height="300px">
+          <div class="con">
+            <p><b>bread</b></p>
+            <p class="rate">$2 - $5</p>
+            <p style="font-size:18px;">Delicious Food Makes Tremendous <br>Feel</p>
+          </div>
+        </div>
+      </div>  
+    </div>
+    
+    <!-- our serivce -->
+
+    <div class="service">
+      <div class="offer">
+        <p style="color: orange;">// OUR SERVICES</p>
+        <h3 style="font-size: 24px;">What Do We Offer For You</h3>
+        <p>Welcome to our bakery, where we offer a delightful array of freshly baked goods and exceptional<br>
+          service.With our convenient online ordering platform, you can indulge in our delectable treats<br>
+          from the comfort of your own home.Explore our mouthwatering selection of artisan bread,<br>
+          classic favorites like cakes,icecreams,chocolate,and cookies.</p>
+        <div class="provide">
+          <div class="online">
+            <h6><span><i class="fa-solid fa-cart-shopping"></i></span>Online Ordering</h6>
+            <p>where customers can easily browse and <br>order their favorite baked goods.Implement<br>
+              a streamlined checkout process with<br>secure online payment options.</p>
+          </div>
+          <div class="online">
+            <h6><span><i class="fa-solid fa-truck"></i></span>Timely Delivery</h6>
+            <p>Ensure efficient and punctual delivery<br>for online orders.Provide customers
+              with<br>accurate delivery time estimates and real<br>time tracking.
+              Promptly address any delivery<br>issuesdelays to maintain customer<br>satisfaction</p>
+          </div>
+        </div>
+        <div class="provide">
+          <div class="online">
+            <h6><span><i class="fa-solid fa-cake-candles"></i></span>Customization Options</h6>
+            <p>Offer customers the ability to customize<br>their orders, such as selecting flavors,<br>fillings,decorations. 
+              personal touch<br>allows customers to create their perfect baked goods.</p>
+          </div>
+          <div class="online">
+            <h6><span><i class="fa-solid fa-ice-cream"></i></span>Special Occasion</h6>
+            <p> Create special packages or themed<br>offerings for holidays,birthdays,newyear,<br>anniversaries celebrations. 
+              This can include<br>customized cakes,party platters,or gift sets,<br>making it convenient customers to order for special events.</p>
+          </div>
+        </div>
+      </div>
+      <div class="serone">
+      <img src="assets/make a services.jpg" width="400px" height="600px">
+      </div>
+    </div>
+    <div class="sletter">
+      <p class="slet">//client review</p>
+      <h3><b>More Than 1000+<br>Customers Trusted Us</b></h3>
+      <div class="clientview">
+        <div class="online reviews">
+          <h6><span><i class="fa-solid fa-user"></i></span>client</h6>
+          <p>I can't say enough good things about this bakery!<br> 
+            Their freshly baked bread is absolutely divine, <br>with a perfect crust and soft, flavorful center.</p>
+        </div>
+        <div class="online reviews">
+          <h6><span><i class="fa-solid fa-user"></i></span>client</h6>
+          <p> From the moment you step into this bakery,the <br>inviting aroma and beautiful display of treats<br>captivate your senses. 
+            It's a haven for anyone <br>with a sweet tooth, and I highly recommend <br>paying them a visit.</p>
+        </div>
+        <div class="online reviews">
+          <h6><span><i class="fa-solid fa-user"></i></span>client</h6>
+          <p> The delivery service from this bakery is prompt<br>and reliable. I appreciate the real time tracking <br>updates, 
+            which give me peace of mind <br>knowing exactly when my order will arrive.</p>
+        </div>
+      </div>
+      <div class="btn">
+        <button> < </button>
+        <button> > </button>
+      </div>
+      <div class="content subscrib">
+        <div class="best">
+          <h5>Subscribe Our <br>Newsletter</h5>
+        </div>
+        <div class="num sub">
+          <input type="email" name="email" placeholder="Your Email"><span><button>submit</button></span>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class="foot">
+        <h4>Shop Address</h4><br>
+        <div class="add">
+         <span><i class="fa-solid fa-location-dot"></i></span><p>6,Vivekanandar Street,<br>Dubai Cross Lane,<br>Dubai</p>
+        </div>
+        <div class="add">
+         <span><i class="fa-solid fa-phone"></i></span><p>+91 9626405285</p>
+        </div>
+        <div class="add">
+          <span><i class="fa-sharp fa-solid fa-envelopes-bulk"></i></span><p>info@heavenbites.com</p>
+        </div> 
+      </div>
+      <div class="navi foot">
+        <h4>Quick Links</h4><br>
+        <ul>
+          <li><a href="">Menu</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Special Occasions</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Support</a></li>
+        </ul>
+      </div>
+      <div class="photos foot">
+        <h4>Albums</h4>
+      </div>
+    </div>
+    <div class="end">
+      <p>COPYRIGHT@2024</p>
+      <div class="condition">
+        <a href="">Terms and Conditions </a>
+        <a href="">Privacy Policy</a>
+        <a href="">Delivery Policy</a>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
